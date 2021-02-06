@@ -1,0 +1,11 @@
+.root {
+  border: 1px solid lightgrey;
+  background: whitesmoke;
+  font-size: 1rem;
+  padding: 0.25rem;
+}
+
+.root::placeholder {
+  color: #ababab;
+  font-size: 0.75rem;
+}
