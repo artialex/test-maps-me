@@ -29,9 +29,6 @@ API для работы с аккаунтами: https://developer.valvesoftware
 тысячи людей в день, у каждого из которых может быть куплено несколько сотен игр.
 Подумайте, как решить этот вопрос.
 
-https://steamcommunity.com/id/lazypacman/friends/
-https://steamcommunity.com/profiles/76561198007613352
-
 ## How to run
 
 1. Install dependencies

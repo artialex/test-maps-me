@@ -9,14 +9,14 @@ interface AccountServiceOptions {
 export function createAccountService(options: AccountServiceOptions) {
   let { cache } = options
 
-  async function getGames(id: string): Promise<number[]> {
-    if (!cache.has(id)) {
-      let games = await SteamApi.getGames(id)
+  async function getGames(steamId: string): Promise<number[]> {
+    if (!cache.has(steamId)) {
+      let games = await SteamApi.getGames(steamId)
 
-      cache.set(id, games)
+      cache.set(steamId, games)
     }
 
-    return cache.get(id)
+    return cache.get(steamId)
   }
 
   return {
