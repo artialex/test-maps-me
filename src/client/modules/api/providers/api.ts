@@ -7,9 +7,9 @@ let client = axios.create({
 export function createApi() {
   async function findMatches(links: string[] = []) {
     let endpoint = '/matches'
-    let query = '?links=' + links.join(',')
+    let query = 'links=' + links.join(',')
 
-    let response = await client.get(endpoint + query)
+    let response = await client.get(endpoint + '?' + query)
 
     return response.data
   }
